@@ -6,7 +6,7 @@ const router = jsonServer.router("filteredData.json");
 
 const middleWares = jsonServer.defaults();
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3001;
 
 server.use(middleWares);
 server.use(router);
